@@ -1,0 +1,267 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: "Roboto", sans-serif;
+}
+
+header{
+  position: fixed;
+  background: #a43f49;
+  display: inline;
+  padding: 10px;
+  width: 250px;
+  height: 60px;
+}
+h1{
+  text-align:center;
+}
+.topMenu{
+display:none;
+}
+ .active{
+  display:block;
+}
+.nav-bar{
+  margin-top:10px;
+}
+.nav-bar a{
+  display:inline;
+  z-index:10;
+  padding:10px;
+  text-transform: uppercase;
+  margin-top:10px;
+  text-decoration: none;
+  color:#fff;
+}
+.nav-bar a:hover{
+  color:blue;
+}
+.navbar{
+  background: #fff;
+  margin-top: 0px;
+  background-color: #a43f49;
+  padding-top: 20px;
+}
+
+.nav-bar .navbar-brand{
+  color:#fff;
+  font-size:18px;
+  font-weight: 500px;
+}
+.nav-bar .navbar-brand:hover{
+  color:#007bff;
+}
+
+.left_area h3{
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.left_area span{
+  color: #fff;
+  padding-left:10px;
+    font-family: 'Acme', sans-serif;
+
+}
+.sidebar {
+  background: #a43f49 !important;
+  text-align: center;
+  margin-top:60px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.1s;
+  transition-property: left;
+}
+
+.sidebar .profile_image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-family: times new roman;
+  transition-property: background;
+  border-bottom: 2px  solid white;
+
+}
+
+.sidebar a:hover{
+  background: #efefef;
+  color: #a43f49;
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+ #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  display:inline;
+  cursor: pointer;
+  left: 200px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+.content{
+  margin-left: 250px;
+  background: url(background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .content{
+  margin-left: 60px;
+}
+
+#check{
+  display: none;
+}
+.margin{
+  margin-left:250px;
+}
+/*content*/
+#content{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  color:#efefef;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin:0px;
+}
+
+/*about*/
+#about{
+  padding:70px;
+}
+#about h1{
+  line-height: 3vw;
+  text-align:center;
+}
+/*skills*/
+#skills img{
+  height:230px;
+  width:280px;
+}
+@media screen and (min-width: 851px) {
+  #about h1{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 850px,min-width:600px) {
+  #about h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  #about h1 {
+    font-size: 20px;
+  }
+}
+
+
+#skills h1{
+  text-align: center;
+  color: #efefef;
+  padding-bottom: 20px;
+  padding-top:20px;
+  font-family: 'Lato', sans-serif;
+}
+#skills h1::after{
+  content:' ';
+  background: #efefef;
+  display: block;
+  height:3px;
+  width:70px;
+  margin:10px auto 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+#skills .card{
+      box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+      transition: 0.3s ease-out;
+      margin:20px;
+      border-radius: 2px;
+      box-sizing: border-box;
+
+}
+
+#skills .card:hover{
+  box-shadow:0 0 5em rgba(0,0,0,0.4);
+}
+#skills h5 {
+  text-align: center;
+  color:#999;
+  font-size:10px;
+}
+#skills{
+  text-align: center;
+}
+#skills .card-body{
+  height:100%;
+  width:100%;
+  padding:0;
+}
+#skills img{
+  height:100%;
+  width:100%;
+  padding-bottom:10px;
+
+}
+#skills .row .col-sm-3 {
+  padding-left:0px;
+  padding-right:0px;
+}
+#skills .row{
+text-align: center;
+}
