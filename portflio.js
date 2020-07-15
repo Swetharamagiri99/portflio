@@ -24,3 +24,17 @@ else{
 
 }
 });
+//index.js  
+function sendEmail() {
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "swetharamagiri.99@gmail.com",
+	Password : "Swetha@1234",
+	To : '<recipient’s email address>',
+	From : "<sender’s email address>",
+	Subject : "<email subject>",
+	Body : "<email body>",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}

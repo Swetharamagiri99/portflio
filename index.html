@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Merriweather+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <script type="text/javascript" href="portflio.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
   </head>
   <body>
 <section class="nav-bar topMenu">
@@ -31,18 +32,16 @@
 </nav>
 </section>
     <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
-      <div class="left_area">
-        <h3><span>Portflio</span></h3>
-      </div>
-    </header>
-    <!--header area end-->
-    <!--sidebar start-->
     <div class="sidebar">
+      <header>
+      <div>
+        <h3 style="padding-bottom:10px;"><span style="padding-left:30px;">Portflio</span><label for="check">
+        <i style="padding-left:60px;" class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      </h3>
+      </div>
+      
+      </header>
       <center>
         <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="profile_image" alt="">
         <h4>Swetha Ramagiri</h4>
@@ -60,50 +59,9 @@
       <h1>Web Developer,</h1><br>
       <h1>Programmer.</h1>
     </section>
+    
 
   <section id="skills">
-  <!--<div class="row margin">
-  <div class="col-sm-3 col-lg-1 col-md-2">
-    <div class="card">
-      <div class="card-body">
-          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIszERe2OZ65d1ELx-ZU0LiH7Qs7F4YGnQTQ&usqp=CAU" alt="Card image cap">
-        <h5 class="card-title">HTML</h5>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3 col-lg-1.5 col-md-2">
-    <div class="card">
-      <div class="card-body">
-          <img class="card-img-top" src="https://pluralsight.imgix.net/paths/path-icons/css-c9b214f0d7.png" alt="Card image cap">
-        <h5 class="card-title">CSS </h5>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3 col-lg-1.5 col-md-2">
-    <div class="card">
-      <div class="card-body">
-          <img class="card-img-top" src="https://www.britefish.net/wp-content/uploads/2019/06/logo-javascript-2-300x300.png" alt="Card image cap">
-        <h5 class="card-title">JAVASCRIPT</h5>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3 col-lg-1.5 col-md-2">
-    <div class="card">
-      <div class="card-body">
-          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhK-olbKFwtjNTg1w6r9OESFf6Y6lStUVnVA&usqp=CAU" alt="Card image cap">
-        <h5 class="card-title">NODEJS</h5>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3 col-lg-1 col-md-2">
-    <div class="card">
-      <div class="card-body">
-          <img class="card-img-top" src="https://store-images.s-microsoft.com/image/apps.6989.a12805b7-de86-452a-9038-c542399367ad.f72d2524-f4cc-48a6-96ac-6110d258321c.fb8b1181-133f-4b29-a852-f3d724ad1020" alt="Card image cap">
-        <h5 class="card-title">MONGODB</h5>
-      </div>
-    </div>
-  </div>
-</div>-->
     <div class="container px-5 py-5"> 
         <div class="row margin"> 
             <div class="col mx-1"> <img class="card-img-top" src="https://i7.pngguru.com/preview/555/192/997/html-computer-icons-website-html5-drawing-vector.jpg" alt="Card image cap">
@@ -132,63 +90,174 @@
             </div> 
         </div> 
     </div> 
-
-
- </section>      <section class="section my-services" data-section="section2">
+ </section>      
+      <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>What I’m good at?</h2>
+            <h2>My Works</h2>
             <div class="line-dec"></div>
             <span
-              >Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
-              Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
-              Nullam eu faucibus diam. Donec eget massa ante.</span
-            >
+              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
+              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span>
           </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="photos/colorgame.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>ColorGame</h4>
+                  <p>
+                   It is a game with colors where we can select a colors in the options according to the percentages of Red,Green and Blue.
+                  It has 2 levels Easy and Hard.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://swetharamagiri99.github.io/colorgame/">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>MusicalKeys</h4>
+                  <p>
+                   MusicalKeys is fun game with animation effects here we can play music by pressing the keys each key corresponds to different music.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://swetharamagiri99.github.io/MusicalKeys/">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="photos/paper.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="photos/todo.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>ToDoist</h4>
+                  <p>
+                    ToDoist is a website where we can add To-dos ,check and uncheck and also delete To-dos.
+                  It is useful where we can make a list works.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>YelpCamp</h4>
+                  <p>
+                    It is a website where campgrounds are displayed where we can add delete campgrounds.Adding and deleting comments,rating and reviews are features.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://infinite-brook-83512.herokuapp.com/">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="photos/yelpcamp.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Other Interests</h2>
+                        <div class="line-dec"></div>
+
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
               <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML5 &amp; CSS3</h4>
-                <p>
-                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
-                  at bibendum. Sed ac ante non metus vehicula congue quis eget
-                  eros.
-                </p>
+                <img style="width:100%;height:100%"src="photos/pencil.jpeg">
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
               <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Creative Ideas</h4>
-                <p>
-                  Proin lacus massa, eleifend sed fermentum in, dignissim vel
-                  metus. Nunc accumsan leo nec felis porttitor, ultricies
-                  faucibus purus mollis.
-                </p>
+                <img style="width:100%;height:100%" src="photos/doodle.jpg">           
+
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="service-item">
+                <img style="width:100%;height:100%" src="photos/flower.jpeg">
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
               <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Easy Customize</h4>
-                <p>
-                  Integer suscipit condimentum aliquet. Nam quis risus metus.
-                  Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
-                  dui.
-                </p>
+                <h1>
+                <img style="width:100%;height:100%" src="photos/eye.jpg">
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Admin Dashboard</h4>
-                <p>
-                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                  leo nec f
-                </p>
-                <button class="btn btn-primary"><a href="">view project</a></button>
+          </div>
+        </div>
+      </section>
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name"  placeholder="Your name..." required=""/>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required=""
+                         />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required=""/>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required="" >
+                        </textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
