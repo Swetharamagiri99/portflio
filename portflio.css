@@ -45,7 +45,7 @@ display:none;
 .nav-bar a{
   display:inline;
   z-index:10;
-  padding:10px;
+  padding:5px;
   text-transform: uppercase;
   margin-top:10px;
   text-decoration: none;
@@ -59,6 +59,7 @@ display:none;
   margin-top: 0px;
   background-color: #a43f49;
   padding-top: 20px;
+  padding-left:0px;
 }
 
 .nav-bar .navbar-brand{
@@ -182,7 +183,7 @@ label #sidebar_btn:hover{
 
 @media screen and (max-width: 850px) {
   #about h1 {
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 
@@ -352,9 +353,8 @@ text-align: center;
 
 button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #a43f49;
+    padding-right:20px;
+    
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.5px;

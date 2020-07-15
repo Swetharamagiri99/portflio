@@ -24,17 +24,16 @@ else{
 
 }
 });
-//index.js  
-function sendEmail() {
-	Email.send({
-	Host: "smtp.gmail.com",
-	Username : "swetharamagiri.99@gmail.com",
-	Password : "Swetha@1234",
-	To : '<recipient’s email address>',
-	From : "<sender’s email address>",
-	Subject : "<email subject>",
-	Body : "<email body>",
-	}).then(
-		message => alert("mail sent successfully")
-	);
+function myFunction(x) {
+  if (x.matches) { 
+    $(".topMenu a").css("font-size","10px");
+ 
+
+  } else {
+       $(".topMenu a").css("font-size","18px");
+
+  }
 }
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
