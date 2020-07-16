@@ -37,12 +37,6 @@ h1{
 .nav-bar{
   margin-top:10px;
 }
-nav i{
-  padding-top:0px;
-    background-color: none;
-height:10px;
-  margin:top:0px;
-}
 .nav-bar a{
   display:inline;
   z-index:10;
@@ -50,7 +44,7 @@ height:10px;
   text-transform: uppercase;
   margin-top:10px;
   text-decoration: none;
-  color:#fff;
+  color:#efefef;
 }
 .nav-bar a:hover{
   color:#efefef;
