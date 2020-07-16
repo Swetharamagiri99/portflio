@@ -30,7 +30,7 @@ function myFunction(x) {
  
 
   } else {
-       $(".topMenu a").css("font-size","18px");
+       $(".topMenu a").css("font-size","15px");
 
   }
 }

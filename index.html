@@ -6,24 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portflio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="portflio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Merriweather+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
     <script type="text/javascript" href="portflio.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>  
   </head>
   <body>
+    <!--navbar top-->
 <section class="nav-bar topMenu">
 <nav class="navbar navbar-light fixed-top">
-  <div style="padding-left:0px;padding-right:0px"class="container">
+  <div style="padding-left:0px; padding-right:0px"class="container">
     <ul >
-      <a class="navbar-brand" href="#">Portflio</a>
+      <a class="navbar-brand" href="#about">Portflio</a>
         <a href="#about">ABOUT</a>
-        <a href="#gallery">skills</a>
-        <a href="#procedure">mywork</a>
+        <a href="#skills">Skills</a>
+        <a href="#myworks">Mywork</a>
     </ul>
   <button id="button">
   <i class="fas fa-bars"></i>
@@ -31,6 +32,7 @@
 </div>
 </nav>
 </section>
+    <!--side navbar-->
     <input type="checkbox" id="check">
     <div class="sidebar">
       <header>
@@ -47,55 +49,67 @@
         <h4>Swetha Ramagiri</h4>
       </center>
       <a href="#about"><span>About Me</span></a>
-      <a href="#"><span></span>Education</a>
       <a href="#skills"><span>Skills</span></a>
-      <a href="#"><span>My Works</span></a>
-      <a href="#"><span>Interests</span></a>
-      <a href="#"><span>Contact Me</span></a>
+      <a href="#myworks"><span>My Works</span></a>
+      <a href="#interests"><span>Interests</span></a>
+      <a href="#contact"><span>Contact Me</span></a>
+       <section id="social" >
+        <div class="social-media">
+      <a href="https://twitter.com/ramagiri_swetha" class="fas fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/swetharamagiri/" class="fa fa-linkedin"></a>
+      <a href="https://www.facebook.com/swetha.ramagiri.94" class="fa fa-facebook"></a>
+      <a href="https://github.com/Swetharamagiri99/" class="fa fa-github"></a>
+      <a href="https://www.instagram.com/swetha.ramagiri/" class="fa fa-instagram"></a>
     </div>
+    </section>
+    </div>
+    
     <section  id="content">
+      <!--about-->
     <section id="about" >
       <h1>Hi,I am <span class="font-italic font-weight-light">Swetha Ramagiri </span> ;)</h1><br>
       <h1>Web Developer,</h1><br>
       <h1>Programmer.</h1>
     </section>
 
-
+    <!--skills-->
   <section id="skills">
     <div class="section-heading">
-            <h2>Skills</h2>
-            <div class="line-dec"></div>
+        <h2>Skills</h2>
+        <div class="line-dec"></div>
     </div>
     <div class="container px-5 py-5"> 
         <div class="row margin"> 
-            <div class="col mx-1"> <img class="card-img-top" src="https://i7.pngguru.com/preview/555/192/997/html-computer-icons-website-html5-drawing-vector.jpg" alt="Card image cap">
-            <h4 class="card-title">HTML</h4>
+            <div class="col mx-1"> <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSiwhavnqKNeVQwHQbqoIspp3ymq7ZoDxupUQ&usqp=CAU" alt="Card image cap">
+            <h5 class="card-title">HTML</h5>
             </div> 
-            <div class="col mx-1"><img class="card-img-top" src="https://pluralsight.imgix.net/paths/path-icons/css-c9b214f0d7.png" alt="Card image cap">
+            <div class="col mx-1"><img class="card-img-top" src="https://ih1.redbubble.net/image.782561558.4670/st,small,845x845-pad,1000x1000,f8f8f8.u4.jpg" alt="Card image cap">
             <h5 class="card-title">CSS </h5>
             </div> 
-            <div class="col mx-1"><img class="card-img-top" src="https://www.britefish.net/wp-content/uploads/2019/06/logo-javascript-2-300x300.png" alt="Card image cap">
+            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTKBSKQCkC5V5kRSGpcFlJmDcdIsGL8xBSZA&usqp=CAU" alt="Card image cap">
             <h5 class="card-title">JAVASCRIPT</h5>
             </div> 
-            <div class="col mx-1"><img class="card-img-top" src="https://www.mindrops.com/images/nodejs-image.png" alt="Card image cap">
+            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfxSBeI1_dVUmNt6DjCb0LOmEB-W_aZkmLQg&usqp=CAU" alt="Card image cap">
             <h5 class="card-title">NODEJS</h5>
             </div> 
-            <div class="col mx-1"><img class="card-img-top" src="https://icon2.cleanpng.com/20180702/evv/kisspng-mongodb-database-nosql-postgresql-mongo-5b39f9e31e31b4.5891115215305261791237.jpg" alt="Card image cap">
+            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT91jivdED87k_FKAC3mNP02CBusibyO3p--A&usqp=CAU" alt="Card image cap">
             <h5 class="card-title">MONGODB</h5>
             </div> 
-            <div class="col mx-1"><img class="card-img-top" src="https://thumbnail.imgbin.com/18/7/19/imgbin-python-logo-programmer-fierce-python-s-blue-and-yellow-logo-vTCHAtgnCtFtega1YpGrJHPXQ_t.jpg" alt="Card image cap">
-            <h5 class="card-title">MONGODB</h5>
+            <div class="col mx-1"><img class="card-img-top" src="https://localist-images.azureedge.net/photos/31583518696354/original/0135374d81d3481dd24228d0deea271b904000a5.png" alt="Card image cap">
+            <h5 class="card-title">PYTHON</h5>
             </div>
-            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6oDxEx_haYxWFgL9fUMHR3q7qWNWRpx5WjA&usqp=CAU" alt="Card image cap">
-            <h5 class="card-title">MONGODB</h5>
+            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSS2AdlDW2zV-hyPiVcC7YcDJzMFqhzZFoekw&usqp=CAU" alt="Card image cap">
+            <h5 class="card-title">MYSQL</h5>
             </div> 
-            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6oDxEx_haYxWFgL9fUMHR3q7qWNWRpx5WjA&usqp=CAU" alt="Card image cap">
-            <h5 class="card-title">MONGODB</h5>
+            <div class="col mx-1"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMypBHedw89IKUkKRY6pcFBc8rftEMI59Afw&usqp=CAU" alt="Card image cap">
+            <h5 class="card-title">C++</h5>
             </div> 
         </div> 
     </div> 
- </section>      
-      <section class="section about-me" data-section="section1">
+ </section>   
+
+     <!--myworks-->   
+      <section id="myworks" class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
             <h2>My Works</h2>
@@ -187,7 +201,9 @@
           </div>
         </div>
       </section>
- <section class="section my-services" data-section="section2">
+
+          <!--interests-->
+ <section id="interests" class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
             <h2>Other Interests</h2>
@@ -218,7 +234,9 @@
           </div>
         </div>
       </section>
-      <section class="section contact-me" data-section="section4">
+
+    <!--contact me-->
+      <section id="contact" class="section contact-me" data-section="section4">
         <div class="container">
           <div class="section-heading">
             <h2>Contact Me</h2>
@@ -265,9 +283,17 @@
           </div>
         </div>
       </section>
+      <section id="social" >
+        <div class="social-media">
+      <a href="https://twitter.com/ramagiri_swetha" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/swetharamagiri/" class="fa fa-linkedin"></a>
+      <a href="https://www.facebook.com/swetha.ramagiri.94" class="fa fa-facebook"></a>
+      <a href="https://github.com/Swetharamagiri99/" class="fa fa-github"></a>
+      <a href="https://www.instagram.com/swetha.ramagiri/" class="fa fa-instagram"></a>
+    </div>
+    </section>
 </section>
-
-    <!--sidebar end-->
+    
     <script type="text/javascript" src="portflio.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

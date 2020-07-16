@@ -1,3 +1,4 @@
+/*basic*/
 body{
   margin: 0;
   padding: 0;
@@ -12,33 +13,26 @@ header{
   display: inline;
 
 }
-header .left_area h3{
-  color: #fff;
-  display:inline;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 500;
+button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #fff;
+    color: #a43f49;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
- header .left_area span{
-  color: #fff;
-  padding-left:10px;
-    font-family: 'Acme', sans-serif;
-
-}*/
 
 h1{
   text-align:center;
 }
-
-.topMenu{
-display:none;
-}
- .active{
-  display:block;
-}
-
+/*navbar top*/
 .nav-bar{
   margin-top:10px;
 }
@@ -71,6 +65,14 @@ display:none;
   color:#007bff;
 }
 
+.topMenu{
+display:none;
+}
+ .active{
+  display:block;
+}
+
+/*side navbar*/
 .sidebar {
   background: #a43f49;
   padding-top: 30px;
@@ -149,6 +151,7 @@ label #sidebar_btn:hover{
   display: none;
 }
 
+
 /*content*/
 #content{
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
@@ -163,18 +166,14 @@ label #sidebar_btn:hover{
 
 /*about*/
 #about{
-  padding:70px;
+  padding:50px;
 }
 #about h1{
   line-height: 3vw;
   text-align:center;
 
 }
-/*skills*/
-#skills img{
-  height:230px;
-  width:280px;
-}
+/*about section*/
 @media screen and (min-width: 851px) {
   #about h1{
     font-size: 35px;
@@ -189,6 +188,7 @@ label #sidebar_btn:hover{
 
 }
 
+/*skills*/
 
 #skills h1{
   text-align: center;
@@ -207,45 +207,138 @@ label #sidebar_btn:hover{
   font-family: 'Lato', sans-serif;
 }
 
-#skills .card{
+#skills .col-mx-1{
       box-shadow:5px 5px 15px rgba(0,0,0,0.9);
       transition: 0.3s ease-out;
-      margin:20px;
+      margin:10px;
       border-radius: 2px;
       box-sizing: border-box;
+      padding:0px;
 
 }
 
-#skills .card:hover{
+#skills .col-mx-1:hover{
   box-shadow:0 0 5em rgba(0,0,0,0.4);
 }
 #skills h5 {
   text-align: center;
   color:#999;
   font-size:10px;
+  padding:10px;
 }
 #skills{
   text-align: center;
 }
-#skills .card-body{
-  height:100%;
-  width:100%;
-  padding:0;
-}
+
 #skills img{
-  height:100%;
-  width:100%;
+
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+
+
   padding-bottom:10px;
 
-}
-#skills .row .col-sm-3 {
-  padding-left:0px;
-  padding-right:0px;
 }
 #skills .row{
 text-align: center;
 }
-/* Services */
+
+/*myworks*/
+/* Left & Right Post */
+
+.right-image-post {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+.left-image-post {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+
+.left-image img,
+.right-image img {
+  border-radius: 5px;
+  width:100%;
+  height:100%;
+}
+
+.right-image-post h4,
+.left-image-post h4 {
+    margin-top: 0px;
+}
+
+.right-image-post p,
+.left-image-post p {
+    margin-top: 20px;
+}
+
+.right-image-post .white-button,
+.left-image-post .white-button {
+    margin-top: 30px;
+    padding-bottom:10px;
+}
+
+.white-button a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #fff;
+    color: #a43f49;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.white-button a:hover {
+    background-color: #a43f49;
+    color: #fff;
+}
+
+button {
+    display: inline-block;
+    padding-right:10px;
+    
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    outline: none;
+    background-color: #a43f49;
+    color: #fff;
+}
+.section-heading {
+    text-align: center;
+    padding: 10px 45px;
+}
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section-heading .line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: #a43f49;
+    margin: 10px auto;
+}
+
+/* interests */
 
 .my-services .col-md-6 {
     padding-left: 5px;
@@ -297,97 +390,6 @@ text-align: center;
 }
 
 
-/* Left & Right Post */
-
-.right-image-post {
-    margin-top: 60px;
-    padding-top: 60px;
-    border-top: 2px solid rgba(250, 250, 250, 0.1);
-}
-.left-image-post {
-    margin-top: 60px;
-    padding-top: 60px;
-    border-top: 2px solid rgba(250, 250, 250, 0.1);
-}
-
-
-.left-image img,
-.right-image img {
-  border-radius: 5px;
-  width:100%;
-  height:100%;
-}
-
-.right-image-post h4,
-.left-image-post h4 {
-    margin-top: 0px;
-}
-
-.right-image-post p,
-.left-image-post p {
-    margin-top: 20px;
-}
-
-.right-image-post .white-button,
-.left-image-post .white-button {
-    margin-top: 30px;
-}
-
-.white-button a {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #fff;
-    color: #a43f49;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: all 0.5s;
-    text-decoration: none;
-}
-
-.white-button a:hover {
-    background-color: #a43f49;
-    color: #fff;
-}
-
-button {
-    display: inline-block;
-    padding-right:20px;
-    
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: all 0.5s;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-button:hover {
-    outline: none;
-    background-color: #a43f49;
-    color: #fff;
-}
-.section-heading {
-    text-align: center;
-    padding: 10px 45px;
-}
-.section-heading h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.section-heading .line-dec {
-    width: 60px;
-    height: 3px;
-    background-color: #a43f49;
-    margin: 10px auto;
-}
-
 /* Contact Me */
 
 section.contact-me {
@@ -435,3 +437,31 @@ section.contact-me {
     text-align: center;
 }
 
+.social-media a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin: 0 3px;
+
+}
+
+ .social-media a:hover {
+    background-color: #fff;
+    color: #a43f49;   
+    text-align: center;
+
+}
+ .social-media {
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+ 
